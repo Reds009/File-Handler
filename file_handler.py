@@ -15,8 +15,7 @@ print(f"you're current directory is '{current_dicrectory}'")
 def create_file():
     # creating a function that will check if the files submitted already exist
         def check_if_file_exist():
-            #file_check = os.path.exists(file) # i was checking for the if the file directory exist that why I was getting the result True
-            file_check = os.path.isfile(file)  # I think this os built-in method is doing the same as the one above it
+            file_check = os.path.isfile(file)
             print(f"Status: {file_check}")
             if file_check == current_dicrectory:
                 print("[*] Removing The Existing File")
